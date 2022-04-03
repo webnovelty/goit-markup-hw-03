@@ -1,0 +1,211 @@
+:root {
+  --lg-color: #2196f3;
+  --menu-color: #212121;
+  --dark-background: #2f303a;
+  --content-color: #757575;
+}
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+address {
+  font-style: normal;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--menu-color);
+}
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--menu-color);
+}
+.logo-part1,
+.logo-part2,
+.logo-part3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-part1 {
+  color: var(--lg-color);
+}
+.logo-part2 {
+  color: #000000;
+}
+.logo-part3 {
+  color: #ffffff;
+}
+.main-menu .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--menu-color);
+}
+.main-menu .link-m {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--lg-color);
+}
+.contact-menu .link {
+  color: var(--content-color);
+}
+.main-menu .link:focus,
+.contact-menu .link:focus {
+  color: var(--lg-color);
+}
+.main-menu .link:hover,
+.contact-menu .link:hover {
+  color: var(--lg-color);
+}
+.main-menu .link:active,
+.contact-menu .link:active {
+  color: var(--lg-color);
+}
+
+.hero-section {
+  background-color: var(--dark-background);
+}
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  background-color: var(--lg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content-det {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--content-color);
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-content {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--content-color);
+}
+footer {
+  background-color: var(--dark-background);
+}
+.footer-menu .link {
+  color: #ffffff;
+}
+.footer-menu .more-link {
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Стили для страницы Портфолио */
+
+.port-btn .btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--menu-color);
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.port-btn .btn-m {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: var(--lg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.port-btn .btn:hover {
+  color: #ffffff;
+  background-color: var(--lg-color);
+}
+.port-button .btn:focus {
+  color: #ffffff;
+  background-color: var(--lg-color);
+}
+.port-btn .btn:active {
+  color: #ffffff;
+  background-color: var(--lg-color);
+}
+.port-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--menu-color);
+}
+.port-content {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--content-color);
+}
