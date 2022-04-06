@@ -3,115 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700:900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><spin class="logo-part1">Web</spin><spin class="logo-part2">Studio</spin></a
-        >
-        <ul class="main-menu">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link-m">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+    <header class="h-border">
+      <div class="container main-flex">
+        <nav class="menu-flex">
+          <a href="./index.html"
+            ><spin class="logo-part1">Web</spin><spin class="logo-part2">Studio</spin></a
+          >
+          <ul class="main-menu-flex">
+            <li class="mm-flex"><a href="./index.html" class="main-menu">Студия</a></li>
+            <li class="mm-flex"><a href="./portfolio.html" class="main-menu-m">Портфолио</a></li>
+            <li class="mm-flex"><a href="" class="main-menu">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-flex">
+          <li class="c-flex">
+            <a href="mailto:info@devstudio.com" class="contact-menu">info@devstudio.com</a>
+          </li>
+          <li class="c-flex">
+            <a href="tel:+380961111111" class="contact-menu">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact-menu">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
-
     <main>
       <!-- Герой -->
-      <section>
-        <h1 class="visually-hidden">Портфолио</h1>
-        <ul class="port-btn">
-          <li><button type="button" class="btn-m">Все</button></li>
-          <li><button type="button" class="btn">Веб-сайты</button></li>
-          <li><button type="button" class="btn">Приложения</button></li>
-          <li><button type="button" class="btn">Дизайн</button></li>
-          <li><button type="button" class="btn">Маркетинг</button></li>
-        </ul>
-        <ul>
-          <li>
-            <img src="./img/port1.jpg" alt="Ноутбук" width="370" />
-            <h3 class="port-header">Технокряк</h3>
-            <p class="port-content">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./img/port2.jpg" alt="Баскетболисты" width="370" />
-            <h3 class="port-header">Постер New Orlean vs Golden Star</h3>
-            <p class="port-content">Дизайн</p>
-          </li>
-          <li>
-            <img src="./img/port3.jpg" alt="Рыба" width="370" />
-            <h3 class="port-header">Ресторан Seafood</h3>
-            <p class="port-content">Приложение</p>
-          </li>
-          <li>
-            <img src="./img/port4.jpg" alt="Наушники" width="370" />
-            <h3 class="port-header">Проект Prime</h3>
-            <p class="port-content">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./img/port5.jpg" alt="Коробки" width="370" />
-            <h3 class="port-header">Проект Boxes</h3>
-            <p class="port-content">Приложение</p>
-          </li>
-          <li>
-            <img src="./img/port6.jpg" alt="Монитор" width="370" />
-            <h3 class="port-header">Inspiration has no Borders</h3>
-            <p class="port-content">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./img/port7.jpg" alt="Книга" width="370" />
-            <h3 class="port-header">Издание Limited Edition</h3>
-            <p class="port-content">Дизайн</p>
-          </li>
-          <li>
-            <img src="./img/port8.jpg" alt="Бирка" width="370" />
-            <h3 class="port-header">Проект LAB</h3>
-            <p class="port-content">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./img/port9.jpg" alt="Ноутбук" width="370" />
-            <h3 class="port-header">Growing Business</h3>
-            <p class="port-content">Приложение</p>
-          </li>
-        </ul>
+      <section class="port-hero">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="button-flex">
+            <li class="button-item"><button type="button" class="port-btn-m">Все</button></li>
+            <li class="button-item"><button type="button" class="port-btn">Веб-сайты</button></li>
+            <li class="button-item"><button type="button" class="port-btn">Приложения</button></li>
+            <li class="button-item"><button type="button" class="port-btn">Дизайн</button></li>
+            <li class="button-item"><button type="button" class="port-btn">Маркетинг</button></li>
+          </ul>
+          <ul class="port-flex">
+            <li class="port-item">
+              <img src="./img/port1.jpg" alt="Ноутбук" width="370" />
+              <h2 class="port-header">Технокряк</h2>
+              <p class="port-content">Веб-сайт</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port2.jpg" alt="Баскетболисты" width="370" />
+              <h2 class="port-header">Постер New Orlean vs Golden Star</h2>
+              <p class="port-content">Дизайн</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port3.jpg" alt="Рыба" width="370" />
+              <h2 class="port-header">Ресторан Seafood</h2>
+              <p class="port-content">Приложение</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port4.jpg" alt="Наушники" width="370" />
+              <h2 class="port-header">Проект Prime</h2>
+              <p class="port-content">Маркетинг</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port5.jpg" alt="Коробки" width="370" />
+              <h2 class="port-header">Проект Boxes</h2>
+              <p class="port-content">Приложение</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port6.jpg" alt="Монитор" width="370" />
+              <h2 class="port-header">Inspiration has no Borders</h2>
+              <p class="port-content">Веб-сайт</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port7.jpg" alt="Книга" width="370" />
+              <h2 class="port-header">Издание Limited Edition</h2>
+              <p class="port-content">Дизайн</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port8.jpg" alt="Бирка" width="370" />
+              <h2 class="port-header">Проект LAB</h2>
+              <p class="port-content">Маркетинг</p>
+            </li>
+            <li class="port-item">
+              <img src="./img/port9.jpg" alt="Ноутбук" width="370" />
+              <h2 class="port-header">Growing Business</h2>
+              <p class="port-content">Приложение</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Футер -->
     <footer>
-      <a href="./index.html"
-        ><spin class="logo-part1">Web</spin><spin class="logo-part3">Studio</spin></a
-      >
-      <address>
-        <ul class="footer-menu">
-          <li>
-            <a href="https://goo.gl/maps/rjEGiiMSJk531g539" class="link" target="_blank"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@example.com" class="more-link">info@example.com</a></li>
-          <li><a href="tel:+380991111111" class="more-link">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container cont-pos">
+        <a href="./index.html"
+          ><spin class="logo-part1">Web</spin><spin class="footer-logo">Studio</spin></a
+        >
+        <address>
+          <ul class="addsize">
+            <li>
+              <a href="https://goo.gl/maps/rjEGiiMSJk531g539" class="footer-menu" target="_blank"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li><a href="mailto:info@example.com" class="footer-menu-more">info@example.com</a></li>
+            <li><a href="tel:+380991111111" class="footer-menu-more">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
